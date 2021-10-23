@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(160, 160, 160);
+}
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-template-columns: 20% auto 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    height: 100vh;
+    margin: 0px;
+}
+
+header{
+    grid-area: header;
+    background-color: aqua;
+}
+
+.productos{
+    grid-area: productos;
+    background-color: rgb(44, 167, 95);
+}
+
+#servicios{
+    grid-area: servicios;
+    background-color: darkorange;
+}
+
+footer{
+    grid-area: footer;
+    background-color: brown;
+}
+nav{
+    grid-area: nav;
+    background-color: cornflowerblue;
+}
+aside{
+    grid-area: publicidad;
+    background-color: rgb(62, 141, 141);
+}
